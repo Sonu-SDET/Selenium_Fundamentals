@@ -110,9 +110,13 @@
             <source>1.8</source>
             <target>1.8</target>
 <suiteXmlFiles>
-<suiteXmlFile>MavenDemotestng.xml</suiteXmlFile>
+<suiteXmlFile>${testng}</suiteXmlFile>
 </suiteXmlFiles>
-<systemPropertyVariables> </systemPropertyVariables>
+
+<systemPropertyVariables> 
+<propertyName>${username}</propertyName>
+<propertyName>${password}</propertyName>	
+</systemPropertyVariables>
 </configuration>
 </plugin>
 </plugins>
