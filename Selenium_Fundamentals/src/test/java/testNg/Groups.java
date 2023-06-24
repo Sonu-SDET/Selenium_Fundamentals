@@ -11,7 +11,10 @@ public class Groups {
 	System.out.println(m.getName());
 	}
 	
-	
+//	<systemPropertyVariables> 
+//	<propertyName>${username}</propertyName>
+//	<propertyName>${password}</propertyName>	
+//	</systemPropertyVariables>
 	
 	@Test(alwaysRun=true)
 	public void userCreation(Method m) {

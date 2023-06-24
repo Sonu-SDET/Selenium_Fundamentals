@@ -110,13 +110,10 @@
             <source>1.8</source>
             <target>1.8</target>
 <suiteXmlFiles>
-<suiteXmlFile>$(testng)</suiteXmlFile>
+<suiteXmlFile>groups.xml</suiteXmlFile>
 </suiteXmlFiles>
 
-<systemPropertyVariables> 
-<propertyName>${username}</propertyName>
-<propertyName>${password}</propertyName>	
-</systemPropertyVariables>
+
 </configuration>
 </plugin>
 </plugins>
