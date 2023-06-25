@@ -20,17 +20,19 @@ public class ScrollAction {
 		driver.get("https://www.selenium.dev/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Thread.sleep(3000);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("window.scrollTo(0,100)");
-		//js.executeScript("location.reload()");
-		js.executeScript("alert('hello world');");
-		
 		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'About Selenium')]"));
 		
+		Thread.sleep(3000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		//js.executeScript("location.reload()");
+		//js.executeScript("alert('hello world');");
+		//js.executeScript("window.scrollTo(0,100)");
 		//js.executeScript("arguments[0].scrollIntoView(true);", element);
+		//js.executeScript("arguments[0].click();", element);
 		
 		String atr = element.getAttribute("href");
+
 		System.out.println(atr);
 		
 		//Assert.assertEquals(element.getCssValue("color"), "#43b02a!important");

@@ -1,0 +1,4 @@
+//	<systemPropertyVariables> 
+//	<propertyName>${username}</propertyName>
+//	<propertyName>${password}</propertyName>	
+//	</systemPropertyVariables>
